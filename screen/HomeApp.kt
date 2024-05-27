@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -56,12 +57,13 @@ fun HomeApp(modifier: Modifier = Modifier, viewModel: NewsViewModel) {
                                  .clip(RoundedCornerShape(8.dp))
                          )
                          if(!it.title.isNullOrEmpty())
-                         Text(text = it.title,
-                             style = TextStyle(
-                                 fontSize = 16.sp,
-                                 color = Color.Black
+                             Text(text = it.title,
+                                  style = TextStyle(
+                                     fontSize = 16.sp,
+                                      color = Color.Black
                              ),
-                             textAlign = TextAlign.Center
+                             textAlign = TextAlign.Center,
+                                 modifier = Modifier.padding(horizontal = 8.dp)
                          )
                          if(!it.description.isNullOrEmpty())
                              Text(text = it.description,
@@ -69,7 +71,8 @@ fun HomeApp(modifier: Modifier = Modifier, viewModel: NewsViewModel) {
                                      fontSize = 10.sp,
                                      color = Color.Black
                                  ),
-                                 textAlign = TextAlign.Center
+                                 textAlign = TextAlign.Center,
+                                 modifier = Modifier.padding(horizontal = 8.dp)
                             )
 
                      }
