@@ -1,3 +1,4 @@
+# News Application
 NewsApp is a sleek and modern Android application designed to keep you updated on the latest happenings around the world. Built with cutting-edge technologies, it offers a seamless user experience while providing a rich source of news.
 <br>✨ Key Features<br>
 <br>MVVM Architecture: Leverages the separation of concerns principle, ensuring clean and maintainable code.<br>
